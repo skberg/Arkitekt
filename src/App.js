@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Layout from './Layout/layout';
+import Textbox from './comp/smallcomp/Text_box.js';
+import  MainInput from './comp/smallcomp/Main_input.js';
+import GridHolder from './style/Gridholder.module.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn fierbase
-        </a>
-      </header>
+
+  
+  <Layout>
+
+    <div className={GridHolder.BigGrid}>
+    <Textbox />
+     <MainInput />
     </div>
+    
+  </Layout>
+
   );
 }
 
