@@ -11,11 +11,6 @@ const Layout =({children}) =>{
 
 
 
-const Holder = styled.div`
- 
-
-`
-
 const InfoText = styled.div`
     text-align: center;
     `
