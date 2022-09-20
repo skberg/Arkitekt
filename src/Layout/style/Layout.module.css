@@ -1,0 +1,17 @@
+@import '../../style/Fix-sty/_color.css';
+@import '../../style/Fix-sty/_gb-styling.css';
+
+
+.Holder{
+    display: grid;
+    grid-template-columns: 0.5fr 5fr;
+   
+}
+
+
+
+
+.LayoutHolder{
+    max-width: 1500px;
+    margin: auto;
+}

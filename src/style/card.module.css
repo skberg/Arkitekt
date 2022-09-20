@@ -1,4 +1,39 @@
+@import './Fix-sty/_color.css';
+@import './Fix-sty/_gb-styling.css';
+
+
+
+
+.cardOne{
+    background-color: var(--gray);
+    padding: var(--pad-small);
+    margin: var(--mag-samll);
+    border-radius: var(--br-small);
+   
+  
+
+}
+
+
+.cardTo{
+    background-color: var(--gray);
+    padding: var(--pad-small);
+    margin: var(--mag-samll);
+    border-radius: var(--br-small);
+    max-height: 200px;
+
+}
+
 .CardData{
+    background-color: var(--gray);
+    padding: var(--pad-small);
+    margin: var(--mag-samll);
+    border-radius: var(--br-small);
+}
+.tallCard{
+    background-color: var(--gray);
+    padding: var(--pad-small);
+    margin: var(--mag-samll);
+    border-radius: var(--br-small);
     
-    background-color: red;
 }

@@ -1,6 +1,18 @@
+@import './Fix-sty/_color.css';
+@import './Fix-sty/_gb-styling.css';
+
+
+
 .BigGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    min-height: 500px;
+}
+
+.Topgrid{
+    display: grid; 
+    grid-template-columns: auto auto;
+    min-height: 500px;
+
 }
 

@@ -1,17 +1,21 @@
 import React from 'react';
-import Shower from './shower';
-import Navbar from './navbar';
+import Shower from '../comp/smallcomp/shower';
+
 import styled from 'styled-components';
 import Info from '../comp/smallcomp/Info';
+import Lay from './style/Layout.module.css'
+
+
 
 const Layout =({children}) =>{
 
-  const LayoutHolder = styled.div`
-    display: grid;
-    grid-template-columns: 0.5fr 5fr;
-   
 
-  `
+
+const Holder = styled.div`
+ 
+
+`
+
 const InfoText = styled.div`
     text-align: center;
     `
@@ -19,15 +23,20 @@ const InfoText = styled.div`
 
     return(
         <>
-         <Navbar />
+         
         <Info></Info>
         <InfoText>Egenerklaring for selvbyggere</InfoText>
-        <LayoutHolder>
-           <Shower />
-          
-          
+
+<div className={Lay.Holder}>
+
+<Shower />
+
+
+        <div className={Lay.LayoutHolder}>
+
             <main>{children}</main>
-        </LayoutHolder>
+        </div>
+        </div>
         </>
     )
 }

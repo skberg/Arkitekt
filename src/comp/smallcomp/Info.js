@@ -11,10 +11,8 @@ export default function Info() {
         text-align: center; 
         margin: 5px;
         border-radius:90px;
-        position: absolute;
+        position: relative;
         right: 0;
-        
-
     `
 
 

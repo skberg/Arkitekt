@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from 'styled-components';
 export default function Shower() {
-   
-   
-   
-   
-   
-   const Holder = styled.div`
+
+
+
+
+
+  const Holder = styled.div`
         background-color: lightblue;
         min-height: 80vh;
-      
+        max-width: 50%;
         margin: 5px;
         border-radius: 5px;
    `
 
-   const HolderConT = styled.div`
+  const HolderConT = styled.div`
     
    `
-    const RoundDiv = styled.div`
+  const RoundDiv = styled.div`
             display: grid; 
             grid-template-columns: 1fr; 
             
@@ -30,13 +30,13 @@ export default function Shower() {
 
       
     `
-    const P = styled.p`
+  const P = styled.p`
       text-align: center;
       margin-top: 5px;
     `
 
 
-const Line = styled.div`
+  const Line = styled.div`
     border-left: 2px solid green;
   height: 50px;
   position: relative;
@@ -55,17 +55,18 @@ const Line = styled.div`
           </RoundDiv>
           <Line></Line>
           <RoundDiv>
-          <P>2</P>
+            <P>2</P>
           </RoundDiv>
           <Line></Line>
           <RoundDiv>
-                <P>3</P>
+            <P>3</P>
           </RoundDiv>
           <Line></Line>
-          <RoundDiv>    <P>4</P></RoundDiv>
-          </HolderConT>
-     
-     
+          <RoundDiv>
+            <P>4</P></RoundDiv>
+        </HolderConT>
+
+
       </Holder>
     </div>
   )
