@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 
 import { Card4} from './smallcomp/inputs'
 
