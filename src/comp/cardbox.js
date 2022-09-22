@@ -1,4 +1,4 @@
-import { Card1 } from "./smallcomp/inputs";
+
 import Card from "../style/card.module.css"
 import GridLayout from '../style/Gridholder.module.css'
 import Input from '../style/inputs.module.css'
@@ -41,7 +41,7 @@ const inputVal = {
 
 export default function Cardbox1() {
   const [values, setValues] = useState(inputVal);
-  const [posts, setPosts] = useState([]);
+
 
   const handleInputChange = (e) => {
     e.preventDefault();
