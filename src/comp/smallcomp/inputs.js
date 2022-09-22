@@ -17,7 +17,8 @@ class Card1 extends Component {
       grid-template-columns: 1fr ;
       grid-gap: 10px;
       margin: 5px;
-      max-width: 75%;
+      float:right;
+      max-width: 200px;
       `
     return (
       <>
@@ -80,56 +81,122 @@ class Card2 extends Component {
 
 /*MainCard*/
 class Card4 extends Component {
+
+
+
+
+
+
+
   render() {
+
+
+    const Holder = styled.div``
+
     const Line1 = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-        margin: 5px;
+        max-width: 100px;
+        margin-bottom: 15px;
+      
         `
     const Line2 = styled.div`
            display: grid;
            grid-template-columns: 1fr 1fr 1fr ;
-           grid-gap: 10px;
-           margin: 5px;
+           
+        
+          
            `
     const Line3 = styled.div`
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 10px;
-            margin: 5px;
+         
             `
     const Line4 = styled.div`
              display: grid;
              grid-template-columns: 1fr 1fr;
-             grid-gap: 10px;
-             margin: 5px;
+            
              `
+    const HolderIn = styled.div`
+    max-width: 70%;
+`
+    const InPut = styled.input`
+  max-width:100px;
+`
+    const InPut2 = styled.input`
+  max-width:100px;
+`
+    const InPut3 = styled.input`
+  max-width:100px;
+`
+    const InPut4 = styled.input`
+  max-width:100px;
+`
+
+
+
+
+
+
+
     return (
       <>
 
 
-      
-        <Line1>
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-        </Line1>
-        <Line2>
-          <input type="text" placeholder='' />
-          <input type="text" placeholder='' />
-          <input type="text" placeholder='' />
-        </Line2>
-        <Line3>
-          <input type="text" placeholder='' />
+        <Holder>
+          <Line1>
 
-        </Line3>
-        <Line4>
-          <input type="text" />
-          <input type="text" />
+            <HolderIn >
+              <label></label>
+              <InPut 
+              type="text"
+              required 
+                />
+            </HolderIn>
+            <HolderIn >
+            <label></label>
+              <InPut type="text"
+               required  />
+            </HolderIn>
+            <HolderIn >
+            <label></label>
+              <InPut type="text"
+               required  />
+            </HolderIn>
+            <HolderIn >
+            <label></label>
+              <InPut type="text" 
+               required />
+            </HolderIn>
 
-        </Line4>
+          </Line1>
+          <Line2>
+          <label></label>
+            <InPut2 type="text"  
+             required />
+               <label></label>
+            <InPut2 type="text"
+             required   />
+               <label></label>
+            <InPut2 type="text"  
+             required />
+          </Line2>
+          <Line3>
+          <label></label>
+            <InPut3 type="text"  
+             required />
+
+          </Line3>
+          <Line4>
+          <label></label>
+            <InPut4 type="text" 
+             required />
+               <label></label>
+            <InPut4 type="text" 
+             required />
+
+          </Line4>
+        </Holder>
       </>
     );
   };

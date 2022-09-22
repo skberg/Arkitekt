@@ -11,10 +11,10 @@ const Layout =({children}) =>{
 
 
 
-const InfoText = styled.div`
+const InfoText = styled.h1`
     text-align: center;
+    color: white;
     `
-
 
     return(
         <>

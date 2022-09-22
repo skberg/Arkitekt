@@ -1,9 +1,13 @@
 :root{
+    --Lite-Lite-gray: #D9D9D9;
+    
     --gray: #c2c2c2;
     --darkgray: #444444;
     --mediumGray:#757575;
     --whit: #ffffff;
     --back: #000000;
+
+    --back-30: rgb(0,0,0,.77);
 
     /*Hovedkomplementær*/
     --Hovedkomp: rgb(15 ,137, 153);

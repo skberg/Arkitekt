@@ -1,0 +1,30 @@
+@import './Fix-sty/_color.css';
+@import './Fix-sty/_gb-styling.css';
+
+
+.datholder{
+      
+        padding: 5px;
+        margin-top: 55px;
+      
+}
+
+.data1{
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+        grid-gap: 2px;
+        height: 80px;
+}
+
+.fe{
+    margin-top: 10px;
+    height: 25px;
+    
+    background-color: transparent;
+    border: 1px solid var(--back);
+}
+
+
+

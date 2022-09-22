@@ -12,6 +12,21 @@
 
 
 .LayoutHolder{
-    max-width: 1500px;
+    min-width: 1200px;
     margin: auto;
+    background-color: var( --Lite-Lite-gray);
+    
+    padding: 15px;
+    border-radius: var( --br-big);
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
+
+
+
