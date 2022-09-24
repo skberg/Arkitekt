@@ -1,6 +1,7 @@
 
 import Card from "../style/card.module.css"
-import GridLayout from '../style/Gridholder.module.css'
+
+import Layout from "../Layout/style/Layout.module.css";
 import Input from '../style/inputs.module.css'
 import { useState } from "react";
 
@@ -10,11 +11,7 @@ const inputVal = {
   Prosjektnr: "",
   Vedlegg: "",
   dato: "",
-
-
-  ekoD: "",
-  ttud: "",
-  gjBl: "",
+  signaturdato: "",
 
 
   Gnr: "",
@@ -30,6 +27,7 @@ const inputVal = {
   Poststed: "",
   
   Underskrift: "",
+  Blokkbokstaver: "",
   
 
 
@@ -54,6 +52,18 @@ export default function Cardbox1() {
     });
   };
 
+///punker som jeg må gjøre 
+///finne font 
+//fikse logo
+//rette skrive feil 
+//fikse eventuelt feil 
+// minske love tekst 
+//se over alt og legg det ut og se at lat fungere 
+
+
+
+
+
 
   
   //https://arkitektbedriftene.free.beeceptor.com/?Gnr=1&Bnr=1&Festenr=1&Seksjonsnr=1&Adresse=1&Bygningsnr=1&Bolignr=1&Poststed=1&Postnr=1&Kommune=1&Saksnr=1&Prosjektnr=1&Vedlegg=&Dato=2022-09-22&Underskrift=a&Blokkbokstaver=A&Dato=2022-09-22
@@ -66,48 +76,46 @@ export default function Cardbox1() {
     const send = values
 
 
-    fetch('http://localhost:8000/', {
+    fetch('https://arkitektbedriftene.free.beeceptor.com/my/api', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(send)
        
     }).then(() => {
-      
       console.log('data is sendt')
-
     })
-
-
     console.log(values)
 
   }
-
-
-
 
   return (
     <>
       <div>
         <div>
-          <form onSubmit={HandelSub} className={GridLayout.holder}>
+          <form onSubmit={HandelSub} className={Layout.card}>
+           
+           
             <div className={Card.cardOne}>
              <div>
               <h1 className={Card.hedingText}>1</h1>
               </div>
-             
-             <div>
-              <div>
-                <label className={Card.lab}>hey</label>
-                <input
-                 className={Input.fe} 
-                  value={values.kommunenssaksnr}
-                  onChange={handleInputChange}
-                  name="kommunenssaksnr" //IMPORTANT 
-                  label="kommunenssaksnr"
-                />
+              <div className={Input.datholder}>
+             <div className={Input.HolderOne}>
+              <div className="">
+                <div className={Input.Linholder}>
+                  <label className={Card.lab}>Kommunens saksnr.</label>
+                  <input
+                  className={Input.fe} 
+                    value={values.kommunenssaksnr}
+                    onChange={handleInputChange}
+                    name="kommunenssaksnr" //IMPORTANT 
+                    label="kommunenssaksnr"
+                  />
+                </div>
               </div>
               <div className="">
-                <label className={Card.lab}> Prosjektnr</label>
+              <div className={Input.Linholder}>
+                <label className={Card.lab}>Prosjektnr</label>
                 <input
                  className={Input.fe} 
                   value={values.Prosjektnr}
@@ -118,33 +126,45 @@ export default function Cardbox1() {
 
 
               </div>
-              <div className={Card.input}>
-                <label className={Card.lab}>Vedlegg</label>
-                <input
-                 className={Input.fe} 
-                  value={values.Vedlegg}
-                  onChange={handleInputChange}
-                  name="Vedlegg" //IMPORTANT 
-                  label="kommunenssaksnr"
-                />
+              </div>
+              <div className="">
+                  <div className={Input.Linholder}>
+                    <label className={Card.lab}>Vedlegg</label>
+                    
+                    
+                    <input
+                      className={Input.fe} 
+                      value={values.Vedlegg}
+                      onChange={handleInputChange}
+                      name="Vedlegg" //IMPORTANT 
+                      label="kommunenssaksnr"
+                    />
+                  </div>
+              </div>
               </div>
               </div>
             </div>
 
 
             <div className={Card.cardTo}>
-              <h1 className={Card.hedingText}>2</h1>
-
-              <div className={Card.input}>
-                <label className={Card.lab}>dato</label>
-                  <input
-                   className={Input.fe} 
-                    value={values.dato}
-                    onChange={handleInputChange}
-                    name="dato" //IMPORTANT 
-                    label="dato"
-                  />
-             
+              
+              <div className={Card.HolderTopp}>
+                <h1 className={Card.hedingText}>2</h1>
+                <h4>Personlig ansvarsrett som selvbygger gitt</h4>
+              </div>
+              <div className={Input.inpDatoOne}>
+                <div className={Input.Linholder}>
+                    <label className={Card.lab}>Dato</label>
+                      <input
+                      className={Input.fe} 
+                        value={values.dato}
+                        onChange={handleInputChange}
+                        name="dato" //IMPORTANT 
+                        label="dato"
+                        type="date"
+                      />
+                </div>
+                
               </div>
 
             </div>
@@ -157,12 +177,18 @@ export default function Cardbox1() {
 
 
             <div className={Card.CardData}>
+              <div className={Card.HolderTopp}>
               <h1 className={Card.hedingText}>3</h1>
+            <h4 className={Card.underheding}>Erklæringen gjelder | Eiendom/byggested
+            </h4>
+      
 
+              </div>
+           
               <div className={Input.datholder}>
                
-              <div className={Input.data1}>
-                <div>
+              <div className={Input.Line1}>
+                <div className={Input.Linholder}>
                   <label className={Card.lab}>Gnr.</label>
                   <input
                     type="text"
@@ -174,7 +200,7 @@ export default function Cardbox1() {
                   />
                 </div>
 
-                <div>
+                <div className={Input.Linholder}>
                   <label className={Card.lab}>Bnr</label>
                   <input type="text"
                    className={Input.fe} 
@@ -185,7 +211,7 @@ export default function Cardbox1() {
                   />
                 </div>
 
-                <div>
+                <div className={Input.Linholder}>
                   <label className={Card.lab}>Festenr</label>
                   <input type="text"
                    className={Input.fe} 
@@ -193,33 +219,37 @@ export default function Cardbox1() {
                     onChange={handleInputChange}
                     name="Festnr" //IMPORTANT 
                     label=""
-                  /></div>
-                <div>
+                  />
+                </div>
+                <div className={Input.Linholder}>
                   <label className={Card.lab}>Seksjonsnr.</label>
                   <input type="text"
                    className={Input.fe} 
-                    value={values.Seksjonsn}
+                    value={values.Seksjonsnr}
                     onChange={handleInputChange}
-                    name="Seksjonsn" //IMPORTANT 
+                    name="Seksjonsnr" //IMPORTANT 
                     label="Seksjonsn"
                   />
                 </div>
               </div>
 
-              <div className={Input.data1}>
-                <div>
+
+
+
+              <div className={Input.Line2}>
+                <div className={Input.Linholder}>
                   <label className={Card.lab}>Bygningsnr.</label>
                   <input
                     className={Input.fe} 
                     type="text"
-                    value={values.bygningnr}
+                    value={values.Bygningsnr}
                     onChange={handleInputChange}
-                    name="bygningnr" //IMPORTANT 
+                    name="Bygningsnr" //IMPORTANT 
                     label="Bygningsnr"
                   />
                 </div>
 
-                <div>
+                <div className={Input.Linholder}>
                   <label className={Card.lab}>Bolignr</label>
                   <input type="text"
                    className={Input.fe} 
@@ -230,8 +260,8 @@ export default function Cardbox1() {
                   />
                 </div>
 
-                <div>
-                  <label className={Card.lab}>Kom</label>
+                <div className={Input.Linholder}>
+                  <label className={Card.lab}>Kommune</label>
                   <input type="text"
                    className={Input.fe} 
                     value={values.Kommune}
@@ -244,7 +274,7 @@ export default function Cardbox1() {
               </div>
 
               <div className={Input.data1}>
-                <div>
+                <div className={Input.Linholder}>
                 <label className={Card.lab}>Adresse</label>
                 <input
                  className={Input.fe} 
@@ -263,33 +293,33 @@ export default function Cardbox1() {
               </div>
 
               <div className={Input.data1}>
-                <div>
-                <label className={Card.lab}>Postnr</label>
-                <input
-                 className={Input.fe} 
-                  placeholder=""
-                  value={values.Postnr}
-                  onChange={handleInputChange}
-                  name="Postnr" //IMPORTANT 
-                  label="Postnr."
-                  type="text"
-                />
-                </div>
+                  <div  className={Input.Linholder}>
+                  <label className={Card.lab}>Postnr</label>
+                  <input
+                  className={Input.fe} 
+                
+                    value={values.Postnr}
+                    onChange={handleInputChange}
+                    name="Postnr" //IMPORTANT 
+                    label="Postnr."
+                    type="text"
+                  />
+                  </div>
 
-                <div>
-                <label className={Card.lab}>Poststed</label>
-                <input
-                 className={Input.fe} 
-                  placeholder=""
-                  value={values.Poststed}
-                  onChange={handleInputChange}
-                  name="Poststed" //IMPORTANT 
-                  label="Poststed"
-                  type="text"
-                />
+                  <div  className={Input.Linholder}>
+                  <label className={Card.lab}>Poststed</label>
+                  <input
+                  className={Input.fe} 
+                
+                    value={values.Poststed}
+                    onChange={handleInputChange}
+                    name="Poststed" //IMPORTANT 
+                    label="Poststed"
+                    type="text"
+                  />
+                </div>
               </div>
-              </div>
-              </div>
+        </div>
 
 
 
@@ -301,62 +331,81 @@ export default function Cardbox1() {
 
 
 
+
+
+
+
             <div className={Card.tallCard}>
+            <div className={Card.HolderTopp}>
               <h1 className={Card.hedingText}>4</h1>
+              <h4 className={Card.underheding}>Erklæring og underskrift</h4>
+            </div>
+              <div className={Input.datholder}>
+                <div className={Input.inpDato}>
+                <div className={Input.Linholder}>
+                            <label className={Card.lab}>Dato</label>
+                              <input
+                              className={Input.fe} 
+                                value={values.signaturdato}
+                                onChange={handleInputChange}
+                                name="signaturdato" //IMPORTANT 
+                                label="signaturdato"
+                                type="date"
+                              />
+                        
+                          </div>
+                </div>
+                        
 
 
-              <div className={Card.input}>
-                <label className={Card.lab}></label>
-                  <input
-                   className={Input.fe} 
-                    value={values.ekoD}
-                    onChange={handleInputChange}
-                    name="ekoD" //IMPORTANT 
-                    label="Dato"
-                  />
             
-              </div>
-
-
-              <div className={Card.input}>
-                <label className={Card.lab}></label>
+          
+          <div className={Input.Linholder}>
+                <label className={Card.lab}>Tiltakshavers underskrift</label>
                   <input
                    className={Input.fe} 
-                    value={values.ttud}
+                    value={values.Underskrift}
                     onChange={handleInputChange}
-                    name="ttud" //IMPORTANT 
+                    name="Underskrift" //IMPORTANT 
                     label="Tiltakshavers underskrift"
+                    required={true}
                   />
+             </div>
              
-              </div>
 
 
-              <div className={Card.input}>
-                <label className={Card.lab}>   </label>
+            
+                <div className={Input.Linholder}>
+                <label className={Card.lab}>Gjentas med blokkbokstaver</label>
                   <input
                    className={Input.fe} 
-                    value={values.gjBl}
+                    value={values.Blokkbokstaver}
                     onChange={handleInputChange}
-                    name="gjBl" //IMPORTANT 
+                    name="Blokkbokstaver" //IMPORTANT 
                     label="Gjentas med blokkbokstaver"
+                    required={true}
+                    
                   />
-             
-              </div>
-
+             </div>
+            
+</div>
 
 
 
               <div className={Card.Bottom}>
 
-                <h4>hey</h4>
+                <h4>Erklæring og underskrift</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur  neque quidem
+                Det bekreftes herved at mitt ansvarsområde er utført i samsvar med tillatelsen og bestemmelser gitt i eller med hjemmel i plan- og bygningsloven.
+                Jeg er kjent med reglene om straff og sanksjoner i plan- og bygningsloven kap 32, og at det kan medføre reaksjoner dersom det er gitt
+                uriktige opplysninger
                 </p>
-                <div className={Card.BTH}>
-                <button className={Card.BT}>send skjema</button>
-                </div>
+               
               </div>
             </div>
+            <div className={Card.BTH}>
+                <button className={Card.BT}>send skjema</button>
+                </div>
           </form>
         </div>
       </div>

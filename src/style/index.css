@@ -2,7 +2,6 @@
 @import './Fix-sty/_gb-styling.css';
 
 body {
- background-color: var(  --back-30);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

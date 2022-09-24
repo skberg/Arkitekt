@@ -8,6 +8,7 @@
     --back: #000000;
 
     --back-30: rgb(0,0,0,.77);
+    --back-75: rgb(0,0,0,.75);
 
     /*Hovedkomplementær*/
     --Hovedkomp: rgb(15 ,137, 153);
@@ -34,6 +35,8 @@
 
 
     /*Oransje*/
+
+    --or-85: rgba(214, 118, 29, 0.434);
 
     --or: rgb(214 117 29);
     --or-l: rgb(230 172 119 );

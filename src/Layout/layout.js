@@ -1,8 +1,4 @@
 import React from 'react';
-import Shower from '../comp/smallcomp/shower';
-
-import styled from 'styled-components';
-import Info from '../comp/smallcomp/Info';
 import Lay from './style/Layout.module.css'
 
 
@@ -11,27 +7,39 @@ const Layout =({children}) =>{
 
 
 
-const InfoText = styled.h1`
-    text-align: center;
-    color: white;
-    `
-
     return(
         <>
          
-        <Info></Info>
-        <InfoText>Egenerklaring for selvbyggere</InfoText>
+        
+   
 
-<div className={Lay.Holder}>
+      
 
-<Shower />
+    
+        
+       
+            <main className={Lay.LayoutHolder}>
+            <div className={Lay.InfoText}>Egenerklæring for selvbygger</div>
+            <p>SAK10 kapittel 12 og § 6-8</p>
+            <p>Erklæringen leveres til ansvarlig søker etter at selvbyggeren er ferdig med sine arbeide</p>
+                
+                {children}
+                
+                </main>
+     
 
 
-        <div className={Lay.LayoutHolder}>
 
-            <main>{children}</main>
-        </div>
-        </div>
+
+
+
+
+
+
+
+
+
+        
         </>
     )
 }
