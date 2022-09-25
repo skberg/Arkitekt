@@ -1,231 +1,161 @@
-@import './Fix-sty/_color.css';
-@import './Fix-sty/_gb-styling.css';
+@import "./Fix-sty/_color.css";
+@import "./Fix-sty/_gb-styling.css";
+
 @font-face {
-    font-family: 'Acumin Pro Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Acumin Pro Bold'), url('../assets/fonts/Acumin-BdPro.woff') format('woff');
-    }
-
-
-
-
-.hedingText{
-    color: var(--or);
-    margin: 15px;
-    font-size: 4rem;
+  font-family: "Acumin Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold"),
+    url("../assets/fonts/Acumin-BdPro.woff") format("woff");
 }
 
-
-
-.cardOne{
-    background-color: var(--whit);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding: 25px;
-    margin: var(--mag-samll);
-    border-radius: var(--br-small);
-    height: auto;
-   
-    
-    
-    
-    
-
+.hedingText {
+  color: var(--or);
+  margin: 15px;
+  font-size: 4rem;
 }
 
-
-.cardTo{
-    background-color: var(--whit);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding: var(--pad-small);
-    margin: var(--mag-samll);
-    border-radius: var(--br-small);
-    /*max-width: 485px;*/
-    
-
-    
-  
-   
-
-}
-.HolderTopp{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-.underheding{
-    margin: auto;
-    text-align: right;
-    font-family: 'Acumin Pro Bold';
-    color: var(--back-75);
-
+.cardOne {
+  background-color: var(--whit);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 25px;
+  margin: var(--mag-samll);
+  border-radius: var(--br-small);
+  height: auto;
 }
 
-
-
-
-.input{
-    margin: auto;
-    
+.cardTo {
+  background-color: var(--whit);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: var(--pad-small);
+  margin: var(--mag-samll);
+  border-radius: var(--br-small);
 }
 
-
-
-.CardData{
-    background-color: var(--whit);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding:25px;
-    margin: var(--mag-samll);
-    border-radius: var(--br-small);
-    /*min-height: 800px;
-    /*max-width: 850px;*/
-
-    
-    
-    
-  
-}
-.tallCard{
-    background-color: var(--whit);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin: var(--mag-samll);
-    border-radius: var(--br-small);
-    padding: 25px;
-    /*max-width: 454px;*/
+.HolderTopp {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
+.underheding {
+  margin: auto;
+  text-align: right;
+  font-family: "Acumin Pro Bold";
+  color: var(--back-75);
+}
 
-.Bottom{
-    margin-top: 15px;
-    background-color: var(--mediumGray);
-    position: relative;
+.input {
+  margin: auto;
+}
+
+.CardData {
+  background-color: var(--whit);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 25px;
+  margin: var(--mag-samll);
+  border-radius: var(--br-small);
+}
+
+.tallCard {
+  background-color: var(--whit);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin: var(--mag-samll);
+  border-radius: var(--br-small);
+  padding: 25px;
+}
+
+.Bottom {
+  margin-top: 15px;
+  background-color: var(--mediumGray);
+  position: relative;
+  height: max-content;
+  border-radius: 5px;
+  padding: var(--pad-small);
+  color: var(--whit);
+}
+
+.BTH {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: -50px;
+  left: 22%;
+}
+
+.BT {
+  background-color: #3ea090;
+  padding: 5px;
+  font-weight: 800;
+  height: 70%;
+  width: 120%;
+  text-transform: uppercase;
+  color: var(--whit);
+  border: none;
+  padding: var(--pad-small);
+  border-radius: 5px;
+}
+
+.lab {
+  color: var(--back-75);
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: 2px solid var(--or-85);
+}
+
+@media only screen and (min-width: 2036px) {
+  .cardOne {
+    width: 850px;
+  }
+
+  .cardTo {
+    max-width: 485px;
+  }
+
+  .CardData {
+    max-width: 850px;
+  }
+
+  .tallCard {
+    max-width: 454px;
+  }
+}
+
+@media only screen and (max-width: 2036px) {
+  .lab {
+    font-size: 1.2rem;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 5px;
+  }
+
+  .cardOne {
+    max-width: auto;
+    min-width: auto;
+    background-color: transparent;
+  }
+
+  .CardData {
+    background-color: transparent;
     height: max-content;
-    border-radius: 5px;
-    padding: var(--pad-small);
-    color: var(--whit);
-  
-}
+  }
 
+  .tallCard {
+    background-color: transparent;
+    border-radius: 0;
+    margin: auto;
+    max-width: 100%;
+    margin: 5px auto;
+  }
 
-.BTH{
-   margin: auto;
-   text-align: center;
-    
+  .BTH {
+    margin: auto;
+    text-align: center;
+
     position: relative;
     bottom: -50px;
-    left: 22%;
-  
+    left: 0;
+  }
 }
-
-.BT{
-    background-color:#3EA090;
-    padding: 5px;
-    font-weight: 800;
-    height: 70%;
-    width: 120%;
-    text-transform: uppercase;
-    color: var(--whit);
-    border: none;
-    padding: var(--pad-small);
-    border-radius: 5px;
-
-}
-
-
-.lab{
-    color: var(--back-75);
-    font-size: 1.2rem;
-    font-weight: 500;
-    border-bottom: 2px solid var(--or-85);   
-  
-    
-}
-
-
-
-
-
-
-@media only screen and (min-width: 2036px){
-
-   
-.cardOne{width: 850px;}
-
-
-.cardTo{
-        max-width: 485px;
-}
-
-.CardData{
-
-        max-width: 850px;
-
-
-}
-.tallCard{
-     max-width: 454px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 2036px){
-
-
-
-   
-    .lab{
-        font-size: 1.2rem;
-        border-bottom: 1px solid transparent;   
-        margin-bottom: 5px;
-        
-    }
-
-
-
-
-.cardOne{
-    max-width: auto;
-    min-width:auto;
-    background-color: transparent;
-
-}
-    
-
-
-.CardData{
-    background-color: transparent;
-    height: max-content;
-   
-}
-
-    .tallCard{
-        background-color: transparent;
-        border-radius: 0;
-        margin: auto;
-        max-width: 100%;
-        margin: 5px auto;
-        
-    }
-
-    .BTH{
-        margin: auto;
-        text-align: center;
-         
-         position: relative;
-         bottom: -50px;
-         left: 0;
-       
-     }
-
-   
-
-
-}
-

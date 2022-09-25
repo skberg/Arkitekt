@@ -1,58 +1,52 @@
-:root{
-    --Lite-Lite-gray: #D9D9D9;
-    
-    --gray: #c2c2c2;
-    --darkgray: #444444;
-    --mediumGray:#757575;
-    --whit: #ffffff;
-    --back: #000000;
+:root {
+  --Lite-Lite-gray: #d9d9d9;
 
-    --back-30: rgb(0,0,0,.77);
-    --back-75: rgb(0,0,0,.75);
+  --gray: #c2c2c2;
+  --darkgray: #444444;
+  --mediumGray: #757575;
+  --whit: #ffffff;
+  --back: #000000;
 
-    /*Hovedkomplementær*/
-    --Hovedkomp: rgb(15 ,137, 153);
-    --HO-lite: rgb(111, 184, 194);
-    --HO-30-lite: rgb(111, 184, 194,.30);
-    --HO-drark: rgb(21, 105, 116);
-    --HO-30-dark: rgb(21, 105, 116,.30);
+  --back-30: rgb(0, 0, 0, 0.77);
+  --back-75: rgb(0, 0, 0, 0.75);
 
+  /*Hovedkomplementær*/
+  --Hovedkomp: rgb(15, 137, 153);
+  --HO-lite: rgb(111, 184, 194);
+  --HO-30-lite: rgb(111, 184, 194, 0.3);
+  --HO-drark: rgb(21, 105, 116);
+  --HO-30-dark: rgb(21, 105, 116, 0.3);
 
-    /*Lys aqua*/
-    --aqua: rgb(62, 160, 144);
-    --aqua-lite: rgb(139, 198, 188);
-    --aqua-30-lite: rgb(139, 198, 188,.30);
-    --aqua-dark: rgb(54, 121, 110);
-    --aqua-30-dark: rgb(54, 121, 110,.30);
+  /*Lys aqua*/
+  --aqua: rgb(62, 160, 144);
+  --aqua-lite: rgb(139, 198, 188);
+  --aqua-30-lite: rgb(139, 198, 188, 0.3);
+  --aqua-dark: rgb(54, 121, 110);
+  --aqua-30-dark: rgb(54, 121, 110, 0.3);
 
-    /*Skogsgrønn*/
+  /*Skogsgrønn*/
 
-    --sk: rgb(46 118 65);
-    --sk-lite:  rgb(130 173 141);
-    --sk-30:rgb(130, 173, 141,.30);
-    --sk-dakr: rgb(43, 92, 55);
-    --sk-30-dark: rgb(43, 92, 55,.30);
+  --sk: rgb(46 118 65);
+  --sk-lite: rgb(130 173 141);
+  --sk-30: rgb(130, 173, 141, 0.3);
+  --sk-dakr: rgb(43, 92, 55);
+  --sk-30-dark: rgb(43, 92, 55, 0.3);
 
+  /*Oransje*/
 
-    /*Oransje*/
+  --or-85: rgba(214, 118, 29, 0.434);
 
-    --or-85: rgba(214, 118, 29, 0.434);
+  --or: rgb(214 117 29);
+  --or-l: rgb(230 172 119);
+  --or-30-l: rgb(230, 172, 119, 0.3);
+  --or-d: rgb(160 91 30);
+  --or-30-d: rgb(160, 91, 30, 0.3);
 
-    --or: rgb(214 117 29);
-    --or-l: rgb(230 172 119 );
-    --or-30-l: rgb(230, 172, 119,.30 );
-    --or-d: rgb(160 91 30);
-    --or-30-d: rgb(160, 91, 30,.30);
+  /*Varmgul*/
 
-
-    /*Varmgul*/
-
-    --va: rgb(228 180 32);
-    --va-l: rgb(239 210 121);
-    --va-30-l: rgb(239, 210, 121,.30);
-    --va-d: rgb(170 135 32);
-    --va-30-d: rgb(170,135, 32,.30);
-
-
-
+  --va: rgb(228 180 32);
+  --va-l: rgb(239 210 121);
+  --va-30-l: rgb(239, 210, 121, 0.3);
+  --va-d: rgb(170 135 32);
+  --va-30-d: rgb(170, 135, 32, 0.3);
 }

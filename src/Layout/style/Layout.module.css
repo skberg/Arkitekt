@@ -1,215 +1,170 @@
-@import '../../style/Fix-sty/_color.css';
-@import '../../style/Fix-sty/_gb-styling.css';
+@import "../../style/Fix-sty/_color.css";
+@import "../../style/Fix-sty/_gb-styling.css";
 
 @font-face {
-    font-family: 'Acumin Pro Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Acumin Pro Bold'), url('../../assets/fonts/Acumin-BdPro.woff') format('woff');
-    }
-
-
-
-.Holder{
-    display: grid;
-    grid-template-columns: 0.5fr 8fr;
-    
-    
+  font-family: "Acumin Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold"),
+    url("../../assets/fonts/Acumin-BdPro.woff") format("woff");
 }
 
-
-
-.card{
-    display: grid; 
-    grid-template-columns: auto auto; 
-    
-    
-    
-    
+.Holder {
+  display: grid;
+  grid-template-columns: 0.5fr 8fr;
 }
 
-
-.ContH{
-    background-color: rgb(0,0, 0,.75);
-    height: 100%;
-    min-width: 400px;
-    position: fixed;
-    
-    z-index: -1000;
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
+.ContH {
+  background-color: rgb(0, 0, 0, 0.75);
+  height: 100%;
+  min-width: 400px;
+  position: fixed;
 
-.maniHolder{
-    height: 100%;
-    display: grid; 
-    grid-template-columns: 1fr;
-    grid-gap:100px; 
-    margin-left:25px;
-}
-.img{
-    margin-top: -120px;
-    max-width: 170px;
-    text-align: center; 
+  z-index: -1000;
 }
 
-.a{
-    color: white;
-    margin-top: -100px;
-    margin-right: 25px;
-    text-decoration: none;
-    border-bottom: 1px solid var(--or);
-    font-weight: 700;
-    font-size: 1rem;
-    max-width: fit-content;
-
+.maniHolder {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 100px;
+  margin-left: 25px;
 }
 
+.img {
+  margin-top: -120px;
+  max-width: 170px;
+  text-align: center;
+}
 
-
+.a {
+  color: white;
+  margin-top: -100px;
+  margin-right: 25px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--or);
+  font-weight: 700;
+  font-size: 1rem;
+  max-width: fit-content;
+}
 
 /*TopHeding*/
-.InfoText{
-    text-align: center;
-        color: rgb(0,0,0,.75);
-  
-        font-weight: 600;
-        font-size: 3rem;
-        margin: 25px;
-       font-family: 'Acumin Pro Bold';;
+.InfoText {
+  text-align: center;
+  color: rgb(0, 0, 0, 0.75);
 
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 25px;
+  font-family: "Acumin Pro Bold";
+}
 
+/*lov tekst*/
+.LovInfo {
+  margin: 25px;
 }
 
 /*small nav*/
 
-
-.overlay{
-    display: none;
+.overlay {
+  display: none;
 }
 
-.Meny{
-    display: grid;
-    grid-template-columns:auto;
-    background-color: var(--darkgray);
-    position: absolute;
-    right: 0;
-    height: 100vh;
-    width: 75%;
-
-    
-
+.Meny {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: var(--darkgray);
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 75%;
 }
 
-.sidbarbutton{
-   
-    position: relative;
-    right: 10px;
+.sidbarbutton {
+  position: relative;
+  right: 10px;
 
-    background-color: transparent;
-    border: none;
-    margin-top: -17px;    
-    font-size: 2rem;
-    color: var(--or);
-    font-weight: 900;
-    
+  background-color: transparent;
+  border: none;
+  margin-top: -17px;
+  font-size: 2rem;
+  color: var(--or);
+  font-weight: 900;
 }
 
-.Sidea{
-    color: white;
-    text-align: right;
+.Sidea {
+  color: white;
+  text-align: right;
 
-    text-decoration-color: var(--or);
-    margin:auto;
-    font-weight: 700;
-    font-size: 1rem;
-    max-width: fit-content;
-}
-.imgS{
-  
-    max-width: 170px;
-    text-align: center; 
+  text-decoration-color: var(--or);
+  margin: auto;
+  font-weight: 700;
+  font-size: 1rem;
+  max-width: fit-content;
 }
 
-
-
-
+.imgS {
+  max-width: 170px;
+  text-align: center;
+}
 
 @media only screen and (min-width: 2036px) {
-    .LayoutHolder{
- 
-   
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-     
-    
-    }
-    .Meny{
-        display: none;
-    }
-}
-
-
-
-
-@media only screen and (max-width: 2036px){
-    .Holder{
-        grid-template-columns: 1fr;
-        margin: auto;
-        
-      
-    }
-    .card{
-        grid-template-columns: 1fr;
-       
-        margin: auto;
-        
-    
-    }
-
-.LayoutHolder{
-    position: none;
-}
-
-.navHolder{
-    display: none;
-}
-
-
-  
-    .LayoutHolder{
-        width: 100%;
-    }
-
-
-
-    .overlay{
-        display: block;
-        background-color: rgb(0,0, 0,.75);
-
-        position: relative;
-     
-        top: 0;
-        left: 0;
-        height: 2rem;
-        padding: 15px;
-    }
-
-
-
-
-
-    .overHolder{
-        display: grid;
-        grid-template-columns: 2fr auto;
-        margin: 15px auto;
-    
-    }
-
-
-
-    
-    
-
+  .LayoutHolder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
+  .Meny {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 2036px) {
+  .Holder {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+
+    margin: auto;
+  }
+
+  .LayoutHolder {
+    position: none;
+  }
+
+  .navHolder {
+    display: none;
+  }
+
+  .LayoutHolder {
+    width: 100%;
+  }
+
+  .overlay {
+    display: block;
+    background-color: rgb(0, 0, 0, 0.75);
+
+    position: relative;
+
+    top: 0;
+    left: 0;
+    height: 2rem;
+    padding: 15px;
+  }
+
+  .overHolder {
+    display: grid;
+    grid-template-columns: 2fr auto;
+    margin: 15px auto;
+  }
+}

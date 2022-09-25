@@ -1,173 +1,117 @@
-@import './Fix-sty/_color.css';
-@import './Fix-sty/_gb-styling.css';
+@import "./Fix-sty/_color.css";
+@import "./Fix-sty/_gb-styling.css";
 
-
-.datholder{
-      
-       
-        margin-top: 55px;
-     
-       
-   
-        margin: auto;
-      
+.datholder {
+  margin-top: 55px;
+  margin: auto;
 }
 
-.data1{
-       
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-       
-     
+.data1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
 }
 
-.Line1{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 5px;
-
-}
-.Line2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 3fr;
-        grid-gap: 5px;
+.Line1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
 }
 
-
-.Linholder{
-        display: grid;
-        grid-template-columns: 1fr ;
-       
-        margin-top: 10px;
+.Line2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-gap: 5px;
 }
 
+.Linholder {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  margin-top: 10px;
+}
 
 /*TallCardinp*/
 
-.inpDatoOne{
-        max-width: 300px;
-        margin: auto;
-}
-.inpDato{
-        max-width: 300px;
+.inpDatoOne {
+  max-width: 300px;
+  margin: auto;
 }
 
+.inpDato {
+  max-width: 300px;
+}
 
+.fe {
+  margin-top: 10px;
+  height: 36px;
+  border-radius: 2px;
+  background-color: rgb(252, 252, 252);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: none;
+}
 
+.HolderOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: auto;
+}
 
+@media only screen and (max-width: 2036px) {
+  /*Lines*/
 
-.fe{
-    margin-top: 10px;
-    height: 36px;
+  .HolderOne {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .data1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .Line1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .Line2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .inpDato {
+    margin: auto;
+  }
+
+  .datholder {
+    max-width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .datholder {
+    padding: 5px;
+  }
+
+  .data1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .fe {
+    margin: auto;
+    height: 25px;
     border-radius: 2px;
-    background-color: rgb(252, 252, 252);
-   
-    /*box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;*/
-   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-   
-   /*
-   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
-   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;*/
-   border: none;
+    background-color: var(--Lite-Lite-gray);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 36px;
+  }
 }
-
-
-.HolderOne{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        margin: auto;
-}
-
-
-
-
-@media only screen and (max-width: 2036px){
-
-
-/*Lines*/
-
-.HolderOne{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 5px;
-}
-.data1{
-       
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 5px;
-       
-     
-}
-
-.Line1{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 5px;
-      
-
-}
-.Line2{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 5px;
-        
-}
-.inpDato{
-        margin: auto;
-}
-
-
-.datholder{
-      
-       
-    
-        max-width: 100%;
-        max-width: 800px;
-     
-   
-        margin: auto;
-      
-}
-
-
-
-
-
-
-
-
-
-        .datholder{
-                padding: 5px;
-               
-        }
-
-        .data1{
-                display: grid;
-                grid-template-columns: 1fr  ;
-             
-            
-                
-        }
-        
-        .fe{
-            margin: auto;
-            height: 25px;
-            border-radius: 2px;
-            background-color: var(--Lite-Lite-gray);
-            /*box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;*/
-           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-            border: 1px solid transparent;
-            width: 100%;
-            height: 36px;
-        }
-        
-      
-    
-    }
-
-
-
