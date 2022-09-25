@@ -70,7 +70,7 @@ export default function Cardbox1() {
     })
       .then(function (text) {
         console.log('Request successful', text);
-        console.log("data is sendt" + " " + JSON.stringify(formData))
+        //console.log("data is sendt" + " " + JSON.stringify(formData))
       })
       .catch(function (error) {
         console.log('Request failed', error)
