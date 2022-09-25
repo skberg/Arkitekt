@@ -1,5 +1,11 @@
 @import './Fix-sty/_color.css';
 @import './Fix-sty/_gb-styling.css';
+@font-face {
+    font-family: 'Acumin Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acumin Pro Bold'), url('../assets/fonts/Acumin-BdPro.woff') format('woff');
+    }
 
 
 
@@ -49,6 +55,9 @@
 .underheding{
     margin: auto;
     text-align: right;
+    font-family: 'Acumin Pro Bold';
+    color: var(--back-75);
+
 }
 
 
@@ -101,9 +110,9 @@
    margin: auto;
    text-align: center;
     
-    position: fixed;
+    position: relative;
     bottom: -50px;
-    right: 25px;
+    left: 22%;
   
 }
 
@@ -204,6 +213,16 @@
         margin: 5px auto;
         
     }
+
+    .BTH{
+        margin: auto;
+        text-align: center;
+         
+         position: relative;
+         bottom: -50px;
+         left: 0;
+       
+     }
 
    
 

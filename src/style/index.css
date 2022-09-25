@@ -1,11 +1,46 @@
 @import './Fix-sty/_color.css';
 @import './Fix-sty/_gb-styling.css';
 
+
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro'), url('../assets/fonts/Acumin-RPro.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Acumin Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Italic'), url('../assets/fonts/Acumin-ItPro.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Acumin Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Bold'), url('../assets/fonts/Acumin-BdPro.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Acumin Pro Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Acumin Pro Bold Italic'), url('../assets/fonts/Acumin-BdItPro.woff') format('woff');
+  }
+
+
+
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Acumin Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

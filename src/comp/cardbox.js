@@ -1,6 +1,4 @@
-
 import Card from "../style/card.module.css"
-
 import Layout from "../Layout/style/Layout.module.css";
 import Input from '../style/inputs.module.css'
 import { useState } from "react";
@@ -29,8 +27,6 @@ const inputVal = {
   Underskrift: "",
   Blokkbokstaver: "",
   
-
-
 };
 
 
@@ -53,38 +49,29 @@ export default function Cardbox1() {
   };
 
 ///punker som jeg må gjøre 
-///finne font 
+
 //fikse logo
 //rette skrive feil 
 //fikse eventuelt feil 
 // minske love tekst 
 //se over alt og legg det ut og se at lat fungere 
+//legge til fav icon 
 
 
-
-
-
-
-  
-  //https://arkitektbedriftene.free.beeceptor.com/?Gnr=1&Bnr=1&Festenr=1&Seksjonsnr=1&Adresse=1&Bygningsnr=1&Bolignr=1&Poststed=1&Postnr=1&Kommune=1&Saksnr=1&Prosjektnr=1&Vedlegg=&Dato=2022-09-22&Underskrift=a&Blokkbokstaver=A&Dato=2022-09-22
 
 
   const HandelSub = (e) => {
     e.preventDefault();
- 
-
-    const send = values
-
-
+    const send = values;
     fetch('https://arkitektbedriftene.free.beeceptor.com/my/api', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(send)
        
     }).then(() => {
-      console.log('data is sendt')
+      console.log('data is sendt');
     })
-    console.log(values)
+    console.log(values);
 
   }
 
@@ -93,8 +80,6 @@ export default function Cardbox1() {
       <div>
         <div>
           <form onSubmit={HandelSub} className={Layout.card}>
-           
-           
             <div className={Card.cardOne}>
              <div>
               <h1 className={Card.hedingText}>1</h1>
@@ -123,15 +108,12 @@ export default function Cardbox1() {
                   name="Prosjektnr" //IMPORTANT 
                   label="kommunenssaksnr"
                 />
-
-
-              </div>
+                </div>
               </div>
               <div className="">
                   <div className={Input.Linholder}>
                     <label className={Card.lab}>Vedlegg</label>
-                    
-                    
+
                     <input
                       className={Input.fe} 
                       value={values.Vedlegg}
@@ -147,10 +129,9 @@ export default function Cardbox1() {
 
 
             <div className={Card.cardTo}>
-              
               <div className={Card.HolderTopp}>
                 <h1 className={Card.hedingText}>2</h1>
-                <h4>Personlig ansvarsrett som selvbygger gitt</h4>
+                <h4 className={Card.underheding}>Personlig ansvarsrett som selvbygger gitt</h4>
               </div>
               <div className={Input.inpDatoOne}>
                 <div className={Input.Linholder}>
@@ -164,15 +145,8 @@ export default function Cardbox1() {
                         type="date"
                       />
                 </div>
-                
               </div>
-
             </div>
-
-
-
-
-
 
 
 
@@ -320,14 +294,7 @@ export default function Cardbox1() {
                 </div>
               </div>
         </div>
-
-
-
-
-
-           
-
-            </div>
+    </div>
 
 
 
@@ -386,14 +353,10 @@ export default function Cardbox1() {
                     required={true}
                     
                   />
-             </div>
-            
-</div>
-
-
+             </div>     
+          </div>
 
               <div className={Card.Bottom}>
-
                 <h4>Erklæring og underskrift</h4>
                 <p>
                 Det bekreftes herved at mitt ansvarsområde er utført i samsvar med tillatelsen og bestemmelser gitt i eller med hjemmel i plan- og bygningsloven.

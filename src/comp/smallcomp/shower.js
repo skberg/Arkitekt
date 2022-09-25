@@ -19,14 +19,14 @@ export default function Shower() {
     <div className={Layout.navHolder}>
     <div className={Layout.ContH}>
       <div className={Layout.maniHolder}>  
-      <div></div>
+      <br />
       <img className={Layout.img} src={LogoNAv} alt="Logo" />
  
       <div><a className={Layout.a} href="https://www.arkitektbedriftene.no/">arkitektbedriftene.no</a></div>
-      <div className=""><a  className={Layout.a} href='https://www.maks.no/'>MAKS</a></div>
-      <div className=""><a className={Layout.a} href='https://www.byggsok.net/'>MAKS-søk</a></div>
+      <div><a className={Layout.a} href='https://www.maks.no/'>MAKS</a></div>
+      <div><a className={Layout.a} href='https://www.byggsok.net/'>MAKS-søk</a></div>
       <div><a className={Layout.a}  href='https://www.arkitekturskaperverdi.no/'>arkitektur skaper verdi</a></div>
-      <img className={Layout.img} src={LogoNAv} alt="Logo" />
+  
       </div>
    
     </div>
@@ -37,7 +37,7 @@ export default function Shower() {
 
 
         <div className={Layout.overHolder}>
-        <img className={Layout.img} src={LogoNAv} alt="Logo" />
+        <img className={Layout.imgS} src={LogoNAv} alt="Logo" />
      
         <button  onClick={toggleSidebar} className={Layout.sidbarbutton}>☰</button>
         </div>

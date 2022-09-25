@@ -30,7 +30,7 @@ class Card1 extends Component {
         </Card1>
       </>
     );
-  };
+  }
 }
 
 /* card 3 inputs*/
@@ -52,7 +52,7 @@ class Card3 extends Component {
         </Card3>
       </>
     );
-  };
+  }
 }
 
 
@@ -74,7 +74,7 @@ class Card2 extends Component {
         </Card2>
       </>
     );
-  };
+  }
 }
 
 
@@ -199,7 +199,7 @@ class Card4 extends Component {
         </Holder>
       </>
     );
-  };
+  }
 }
 
 
