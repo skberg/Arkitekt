@@ -82,8 +82,10 @@
   margin: auto;
   text-align: center;
   position: relative;
-  bottom: -50px;
-  left: 22%;
+  bottom: -30px;
+  left: 82%;
+  margin-bottom: 85px;
+  padding-bottom: 15px;
 }
 
 .BT {
@@ -106,7 +108,7 @@
   border-bottom: 2px solid var(--or-85);
 }
 
-@media only screen and (min-width: 2036px) {
+@media only screen and (min-width: 1727px) {
   .cardOne {
     width: 850px;
   }
@@ -124,7 +126,7 @@
   }
 }
 
-@media only screen and (max-width: 2036px) {
+@media only screen and (max-width: 1727px) {
   .lab {
     font-size: 1.2rem;
     border-bottom: 1px solid transparent;
@@ -157,5 +159,16 @@
     position: relative;
     bottom: -50px;
     left: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .BTH {
+    margin: auto;
+    text-align: center;
+
+    position: relative;
+    bottom: -40px;
+    margin-bottom: 15px;
+    left: -19px;
   }
 }

@@ -11,6 +11,11 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
 }
+.data2 {
+  display: grid;
+  grid-template-columns: 0.2fr 2fr;
+  grid-gap: 5px;
+}
 
 .Line1 {
   display: grid;
@@ -22,6 +27,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
   grid-gap: 5px;
+}
+
+.PostInp {
+  width: 200px;
+  margin-top: 10px;
+  height: 36px;
+  border-radius: 2px;
+  background-color: rgb(252, 252, 252);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: none;
 }
 
 .Linholder {
@@ -58,7 +73,15 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 2036px) {
+@media only screen and (max-width: 400px) {
+  .Line1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 1727px) {
   /*Lines*/
 
   .HolderOne {
@@ -75,7 +98,6 @@
 
   .Line1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
   }
 
@@ -112,6 +134,17 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     border: 1px solid transparent;
     width: 100%;
+    height: 36px;
+  }
+  .PostInp {
+    width: auto;
+    max-width: 100px;
+    margin: auto;
+    height: 25px;
+    border-radius: 2px;
+    background-color: var(--Lite-Lite-gray);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid transparent;
     height: 36px;
   }
 }

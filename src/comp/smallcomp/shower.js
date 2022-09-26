@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import LogoNAv from "../../assets/Logo negative_print.png";
 import Layout from "../../Layout/style/Layout.module.css";
 import SideNave from "../smallcomp/SideNav";
